@@ -16,46 +16,110 @@
 
   <div id="content" class="hidden">
     <header class="text-center py-10">
-      <img src="faris.jpg" alt="Foto Faris" class="w-32 h-32 mx-auto rounded-full border-4 border-gray-700 shadow-lg">
-      <h1 class="text-4xl font-bold mt-4">Faris</h1>
-      <p class="text-gray-400 text-lg">Developer dan Desain</p>
-    </header>
+      <img src="foto.jpg" alt="Foto Faris" class="w-32 h-32 mx-auto rounded-full border-4 border-gray-700 shadow-lg">
+     
+      <h1 class="text-4xl font-bold mt-4 flex items-center justify-center gap-2">
+        Faris
+        <i class="fas fa-check-circle text-blue-500 text-sm mt-1" title="Terverifikasi"></i>
+      </h1>
+      
+<p class="mt-2 text-sm text-green-400 flex items-center justify-center gap-1">
+  <i class="fab fa-spotify animate-pulse"></i>Spotify
+</p>
 
+<div class="mt-6 max-w-xs mx-auto text-center">
+  <div class="bg-gradient-to-r from-gray-800 to-gray-700 p-4 rounded-xl shadow-md border border-gray-600">
+    <p class="text-sm text-gray-300 mb-2 flex items-center justify-center gap-2">
+      <i class="fas fa-headphones text-green-400 animate-pulse"></i>
+      Pilih Musik:
+    </p>
+
+    <!-- Dropdown Lagu -->
+    <select id="songSelector"
+      class="w-full bg-gray-900 text-white p-2 rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-green-400 transition">
+      <option disabled selected value="">🎧 Pilih lagu favoritmu</option>
+      
+      <option value="music.mp3">Blue Yung kai 🌙</option>
+      <option value="music/song2.mp3">Coding Flow 💻</option>
+      <option value="music/song3.mp3">Deep Focus 🔥</option>
+    </select>
+
+    <audio id="audioPlayer" class="hidden"></audio>
+  </div>
+</div>
+     
     <section class="text-center px-4 max-w-xl mx-auto mb-12">
       <p class="text-gray-300">
         Seorang Maha siswa yang tertarik di dunia pengembangan dan desain. Fokus dalam membuat karya kreatif dan fungsional.
       </p>
     </section>
+    
+    <section class="px-4 sm:px-6 lg:px-8 mb-12">
+  <h2 class="text-2xl font-semibold mb-6 text-center">Skill Teknis</h2>
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center">
+    
+    <div class="bg-gray-800 p-4 rounded-lg shadow">
+      <i class="fab fa-html5 text-4xl text-orange-500 mb-2"></i>
+      <h3 class="text-white font-semibold">HTML</h3>
+    </div>
 
-    <section class="px-6 mb-12">
-      <h2 class="text-2xl font-semibold mb-6 text-center">Proyek Saya</h2>
-      <div class="grid gap-6 md:grid-cols-2">
-        <div class="bg-gray-800 p-5 rounded-lg shadow hover:shadow-xl transition">
-          <h3 class="text-xl font-bold">Proyek Kreatif 1</h3>
-          <p class="text-gray-400 mt-2">Desain UI untuk aplikasi to-do dengan tema minimalis.</p>
-        </div>
-        <div class="bg-gray-800 p-5 rounded-lg shadow hover:shadow-xl transition">
-          <h3 class="text-xl font-bold">Proyek Web 2</h3>
-          <p class="text-gray-400 mt-2">Website portfolio responsif menggunakan HTML & Tailwind.</p>
-        </div>
-      </div>
-    </section>
+    <div class="bg-gray-800 p-4 rounded-lg shadow">
+      <i class="fab fa-js text-4xl text-yellow-400 mb-2"></i>
+      <h3 class="text-white font-semibold">JavaScript</h3>
+    </div>
 
-    <section class="px-6 text-center mb-12">
-      <h2 class="text-2xl font-semibold mb-4">Kontak</h2>
-      <div class="flex justify-center gap-6 text-2xl">
-        <a href="https://github.com/Farzz-X" class="text-white hover:text-gray-400" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://wa.me/6288297877862" class="text-green-400 hover:text-green-300" target="_blank">
-          <i class="fab fa-whatsapp"></i>
-        </a>
-      </div>
-    </section>
-
-    <footer class="text-center text-gray-500 text-sm py-6 border-t border-gray-700">
-      &copy; 2025 Faris. All rights reserved.
-    </footer>
   </div>
+</section>
+
+   <section class="px-4 sm:px-6 lg:px-8 mb-12">
+  <h2 class="text-2xl font-semibold mb-6 text-center">Proyek Saya</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+    
+    <div class="card h-full">
+      <img src="images/portfolio.png" alt="Website Portfolio" class="w-full h-40 object-cover rounded-md mb-3">
+      <h3 class="text-xl font-bold text-white">Website Portfolio</h3>
+      <p class="text-gray-400 mt-2">
+        Desain dan koding website ini sendiri dengan HTML, Tailwind CSS, dan animasi loader.
+      </p>
+    </div>
+
+    <div class="card h-full">
+      <img src="images/todolist.png" alt="Aplikasi To-Do" class="w-full h-40 object-cover rounded-md mb-3">
+      <h3 class="text-xl font-bold text-white">Aplikasi To-Do List</h3>
+      <p class="text-gray-400 mt-2">
+        Project JavaScript sederhana untuk mencatat tugas harian, dengan local storage dan fitur hapus/edit.
+      </p>
+    </div>
+
+    <div class="card h-full">
+      <img src="images/event.png" alt="Landing Page Event" class="w-full h-40 object-cover rounded-md mb-3">
+      <h3 class="text-xl font-bold text-white">Landing Page Event</h3>
+      <p class="text-gray-400 mt-2">
+        Halaman promosi event kampus yang dibuat dengan layout responsif dan animasi scroll.
+      </p>
+    </div>
+
+    <div class="card h-full">
+      <img src="images/poster.png" alt="Poster Digital" class="w-full h-40 object-cover rounded-md mb-3">
+      <h3 class="text-xl font-bold text-white">Desain Poster Digital</h3>
+      <p class="text-gray-400 mt-2">
+        Karya desain poster menggunakan Canva dan Figma, dengan fokus pada tipografi dan warna.
+      </p>    
+    </div>
+    
+  <div class="flex flex-col items-center justify-center mt-6 gap-3">
+  <h3 class="text-lg font-semibold text-white">Info Developer</h3>
+  <div class="flex gap-6 text-xl text-white">
+    <a href="https://instagram.com/namamu" target="_blank"><i class="fab fa-instagram hover:text-pink-400"></i></a>
+    <a href="https://wa.me/628xxxxxxx" target="_blank"><i class="fab fa-whatsapp hover:text-green-400"></i></a>
+    <a href="https://tiktok.com/@namamu" target="_blank"><i class="fab fa-tiktok hover:text-gray-300"></i></a>
+    <a href="https://github.com/namamu" target="_blank"><i class="fab fa-github hover:text-gray-400"></i></a>
+  </div>
+</div>
+
+<footer class="text-center text-gray-500 text-sm py-6 border-t border-gray-700">
+  &copy; 2025 Faris.
+</footer>
+</div>
 </body>
-</html>
+  </html>
